@@ -1,0 +1,12 @@
+import socket
+# print(socket.gethostbyname(socket.gethostname()))
+
+class GET_IP:
+    def __init__(self):
+        self.gethost = socket.gethostname()
+        self.get = socket.gethostbyname(self.gethost)
+    
+obj = GET_IP()
+
+if __name__ == "__main__":
+    print(obj.gethost,obj.get)  #OUTPUT: Mudasir 172.25.208.1
